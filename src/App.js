@@ -10,7 +10,7 @@ function App() {
           <a href="https://www.mayagpt.ai/login" target="_blank" rel="noopener noreferrer">
             <img src="gptlogo.svg" alt="MayaGPT Logo" className="logo gpt-logo" />
           </a>
-          <a href="https://www.mayagpt.ai/chat" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.mayagpt.ai/login" target="_blank" rel="noopener noreferrer">
             <img src="gptchat.svg" alt="Chat" className="icon gpt-chat" />
           </a>
         </div>
@@ -20,7 +20,7 @@ function App() {
           <a href="https://www.mayastudio.ai/generate" target="_blank" rel="noopener noreferrer">
             <img src="studiologo.svg" alt="MayaStudio Logo" className="logo studio-logo" />
           </a>
-          <a href="https://www.mayastudio.ai/create" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.mayastudio.ai/generate" target="_blank" rel="noopener noreferrer">
             <img src="studiocreate.svg" alt="Create" className="icon studio-create" />
           </a>
         </div>

@@ -21,7 +21,7 @@ body, h1, p {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 60px; /* Space between logo containers */
+  gap: 300px; /* Space between logo containers */
 }
 
 /* Container for each logo and icon with independent links */
@@ -30,16 +30,17 @@ body, h1, p {
   flex-direction: column;
   align-items: center;
   text-align: center; /* Ensures text aligns well under the logos */
+  transition: filter 0.3s ease-in-out; /* Smooth transition for the glow effect */
 }
 
-/* Hover effect for links within the containers */
+/* Hover effect for the entire container */
+.logo-container:hover {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.75)); /* Glow effect around the shapes */
+}
+
+/* Reduces opacity of links on hover for visual feedback */
 .logo-container a:hover {
   opacity: 0.8; /* Adds a transparency effect on hover */
-}
-
-/* Style for general logos and icons */
-.logo, .icon {
-  height: auto; /* Ensures the height scales with the width */
 }
 
 /* Unique styles for each image to control size */
@@ -49,6 +50,7 @@ body, h1, p {
 
 .gpt-chat {
   width: 100px; /* Specific width for the Chat icon */
+  margin-top: 20px; /* Adds space between the logo and the icon */;
 }
 
 .studio-logo {
@@ -57,4 +59,5 @@ body, h1, p {
 
 .studio-create {
   width: 120px; /* Specific width for the Create icon */
+  margin-top: 20px; /* Adds space between the logo and the icon */
 }
