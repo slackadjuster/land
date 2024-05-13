@@ -17,10 +17,10 @@ function App() {
 
         {/* Container for the second logo and create icon, with separate links */}
         <div className="logo-container">
-          <a href="https://www.mayastudio.ai/generate" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.mayastudio.ai/" target="_blank" rel="noopener noreferrer">
             <img src="studiologo.svg" alt="MayaStudio Logo" className="logo studio-logo" />
           </a>
-          <a href="https://www.mayastudio.ai/generate" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.mayastudio.ai/" target="_blank" rel="noopener noreferrer">
             <img src="studiocreate.svg" alt="Create" className="icon studio-create" />
           </a>
         </div>
