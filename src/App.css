@@ -61,3 +61,41 @@ body, h1, p {
   width: 120px; /* Specific width for the Create icon */
   margin-top: 20px; /* Adds space between the logo and the icon */
 }
+
+/* Base styles apply to all sizes, defined before any media query */
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) { /* Adjusts for tablets and down to mobile devices */
+  .App-header {
+    flex-direction: column; /* Stack items vertically instead of horizontally */
+    gap: 20px; /* Reduce space between items */
+  }
+
+  .logo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gpt-logo, .studio-logo {
+    width: 200px; /* Adjust width for smaller screens */
+  }
+
+  .gpt-chat, .studio-create {
+    width: 80px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) { /* Adjusts for smaller mobile devices */
+  .gpt-logo, .studio-logo {
+    width: 150px; /* Further reduce width for small devices */
+  }
+
+  .gpt-chat, .studio-create {
+    width: 60px;
+  }
+
+  .App {
+    padding: 20px; /* Adds padding around the app for a better edge-to-edge appearance */
+  }
+}
