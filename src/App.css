@@ -6,7 +6,7 @@ body, h1, p {
   font-family: Arial, sans-serif;
 }
 
-/* Full container for the app, ensures it covers the full height of the viewport */
+/* Full container for the app, ensuring it covers the full height of the viewport */
 .App {
   display: flex;
   align-items: center;
@@ -21,7 +21,7 @@ body, h1, p {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 300px; /* Space between logo containers */
+  gap: 350px; /* Space between logo containers */
 }
 
 /* Container for each logo and icon with independent links */
@@ -30,72 +30,59 @@ body, h1, p {
   flex-direction: column;
   align-items: center;
   text-align: center; /* Ensures text aligns well under the logos */
-  transition: filter 0.3s ease-in-out; /* Smooth transition for the glow effect */
 }
 
-/* Hover effect for the entire container */
-.logo-container:hover {
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.75)); /* Glow effect around the shapes */
+/* Consistent size for all logos */
+.logo {
+  height: 250px; /* Maintain aspect ratio */
 }
 
-/* Reduces opacity of links on hover for visual feedback */
-.logo-container a:hover {
-  opacity: 0.8; /* Adds a transparency effect on hover */
+/* Consistent size for all icons */
+.icon {
+  height: 30px; /* Adjust size as needed */
+  margin-top: 40px; /* Space between logo and icon */
 }
 
-/* Unique styles for each image to control size */
-.gpt-logo {
-  width: 250px; /* Specific width for the MayaGPT logo */
+/* Magnifying effect on hover for logos */
+.logo:hover {
+  transform: scale(1.1); /* Scales up to 110% of original size */
+  transition: transform 0.3s ease-in-out; /* Smooth transition effect */
 }
 
-.gpt-chat {
-  width: 100px; /* Specific width for the Chat icon */
-  margin-top: 20px; /* Adds space between the logo and the icon */;
+/* Glowing effect on hover for icons using drop-shadow */
+.icon:hover {
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.7));
+  transition: filter 0.3s ease-in-out; /* Smooth transition effect */
 }
 
-.studio-logo {
-  width: 300px; /* Specific width for the MayaStudio logo */
-}
-
-.studio-create {
-  width: 120px; /* Specific width for the Create icon */
-  margin-top: 20px; /* Adds space between the logo and the icon */
-}
-
-/* Base styles apply to all sizes, defined before any media query */
-
-/* Media queries for responsiveness */
-@media (max-width: 768px) { /* Adjusts for tablets and down to mobile devices */
+/* Media Queries for Mobile and Tablet */
+@media (max-width: 768px) { /* Adjustments for tablets */
   .App-header {
-    flex-direction: column; /* Stack items vertically instead of horizontally */
-    gap: 50px; /* Reduce space between items */
+    flex-direction: column; /* Stack logo containers vertically */
+    gap: 50px; /* Reduce space between containers */
   }
 
-  .logo-container {
-    flex-direction: column;
-    align-items: center;
+  .logo {
+    height: 150px; /* Reduce size of logos for smaller screens */
   }
 
-  .gpt-logo, .studio-logo {
-    width: 200px; /* Adjust width for smaller screens */
-  }
-
-  .gpt-chat, .studio-create {
-    width: 80px;
-    margin-top: 10px;
+  .icon {
+    height: 20px; /* Reduce size of icons */
+    margin-top: 20px; /* Reduce space above icons */
   }
 }
 
-@media (max-width: 480px) { /* Adjusts for smaller mobile devices */
-  .gpt-logo, .studio-logo {
-    width: 150px; /* Further reduce width for small devices */
+@media (max-width: 480px) { /* Adjustments for mobile phones */
+  .App-header {
+    gap: 20px; /* Reduce space even more for smaller containers */
   }
 
-  .gpt-chat, .studio-create {
-    width: 60px;
+  .logo {
+    height: 100px; /* Further reduce logo size for very small screens */
   }
 
-  .App {
-    padding: 20px; /* Adds padding around the app for a better edge-to-edge appearance */
+  .icon {
+    height: 15px; /* Further reduce icon size */
+    margin-top: 10px; /* Reduce space above icons even more */
   }
 }
