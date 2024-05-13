@@ -74,7 +74,7 @@ body, h1, p {
 
 @media (max-width: 480px) { /* Adjustments for mobile phones */
   .App-header {
-    gap: 70px; /* Reduce space even more for smaller containers */
+    gap: 80px; /* Reduce space even more for smaller containers */
   }
 
   .logo {
@@ -82,7 +82,7 @@ body, h1, p {
   }
 
   .icon {
-    height: 30px; /* Further reduce icon size */
+    height: 24px; /* Further reduce icon size */
     margin-top: 20px; /* Reduce space above icons even more */
   }
 }
