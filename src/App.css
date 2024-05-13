@@ -68,7 +68,7 @@ body, h1, p {
 @media (max-width: 768px) { /* Adjusts for tablets and down to mobile devices */
   .App-header {
     flex-direction: column; /* Stack items vertically instead of horizontally */
-    gap: 20px; /* Reduce space between items */
+    gap: 50px; /* Reduce space between items */
   }
 
   .logo-container {
