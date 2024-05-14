@@ -21,7 +21,7 @@ body, h1, p {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 350px; /* Space between logo containers */
+  gap: 280px; /* Space between logo containers */
 }
 
 /* Container for each logo and icon with independent links */
@@ -43,15 +43,17 @@ body, h1, p {
   margin-top: 40px; /* Space between logo and icon */
 }
 
-/* Magnifying effect on hover for logos */
 .logo:hover {
   transform: scale(1.1); /* Scales up to 110% of original size */
-  transition: transform 0.3s ease-in-out; /* Smooth transition effect */
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Smooth transition for transform and filter */
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2)); /* Very light white glow around the shape of the SVG */
 }
+
+
 
 /* Glowing effect on hover for icons using drop-shadow */
 .icon:hover {
-  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5)); /* Reduced blur radius and lower opacity for a subtler glow */
+  filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.2)); /* Reduced blur radius and lower opacity for a subtler glow */
   transition: filter 0.3s ease-in-out; /* Smooth transition effect */
 }
 
