@@ -24,7 +24,7 @@ function App() {
         </div>
       </header>
       <footer className="App-footer">
-        Powered by <a href="https://www.sati.ai" target="_blank" rel="noopener noreferrer">SATI</a>
+        Powered by <a href="https://www.mysati.io" target="_blank" rel="noopener noreferrer">SATI</a>
       </footer>
     </div>
   );
