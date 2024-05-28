@@ -9,6 +9,7 @@ body, h1, p {
 /* Full container for the app, ensuring it covers the full height of the viewport */
 .App {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -49,14 +50,29 @@ body, h1, p {
   filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2)); /* Very light white glow around the shape of the SVG */
 }
 
-
-
 /* Glowing effect on hover for icons using drop-shadow */
 .icon:hover {
   filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.2)); /* Reduced blur radius and lower opacity for a subtler glow */
   transition: filter 0.3s ease-in-out; /* Smooth transition effect */
 }
 
+/* Footer styling for the "Powered by SATI" text */
+.App-footer {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+  color: #888;
+}
+
+.App-footer a {
+  color: #888;
+  text-decoration: none;
+}
+
+.App-footer a:hover {
+  text-decoration: underline;
+}
 
 /* Media Queries for Mobile and Tablet */
 @media (max-width: 768px) { /* Adjustments for tablets */
